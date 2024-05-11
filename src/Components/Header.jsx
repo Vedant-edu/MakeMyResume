@@ -83,7 +83,7 @@ export default function Header() {
       setButtonVisible(true);
       setHeaderVisible(true);
       window.print();
-    }, 1200);
+    }, 1800);
   };
 
   return (
