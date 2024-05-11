@@ -6,7 +6,7 @@ export default function Disclaimer() {
       <b>Disclaimer:</b>
       <br />
       W.E.F : 30/03/2024 <br />
-      Make My Resume is an educational purpose platform designed to assist users in creating resumes for informational and educational purposes only ans as a part of personal project. While we aim to provide helpful resources and tools, ⚠️ we do not guarantee job placement or success in securing employment.
+      Make My Resume is an educational purpose platform designed to assist users in creating resumes for informational and educational purposes only and as a part of personal project. While we aim to provide helpful resources and tools, ⚠️ we do not guarantee job placement or success in securing employment.
       <br />
       The content provided on Make My Resume is sourced from various internet references and is intended for educational use only. We strive to ensure the accuracy and reliability of the information presented, but we cannot guarantee its completeness or suitability for individual circumstances. All the names provided are for references and sample resumes are taken from publically available data.
       <br />
