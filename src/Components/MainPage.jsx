@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Services from './Services'
 import FooterBlock from './FooterBlock'
-
+import img from '../assets/bg.png'
 const Navbar = () => {
 const [navIsOpened, setNavIsOpened] = useState(false)
 const closeNavbar = () => {
@@ -36,14 +36,15 @@ return (
       
     </nav>
   </header>
+  
 </>
 )
 }
  
 const FeatureItem = ({ text }) => {
 return (
-    <div className="text-gray-700  flex gap-x-3">
-        <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100  text-emerald-600 rounded-md flex items-center justify-center">
+    <div className="text-white/80  flex gap-x-3">
+        <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-300  text-emerald-900 rounded-md flex items-center justify-center">
             ✓
         </span>
         {text}
@@ -58,7 +59,7 @@ const features = [
         <>
           Harvard Standard |{" "}
           <a
-            className="text-indigo-900"
+            className="text-indigo-400"
             href="https://cdn-careerservices.fas.harvard.edu/wp-content/uploads/sites/161/2023/08/College-resume-and-cover-letter-4.pdf"
           >
             view
@@ -85,12 +86,13 @@ const features = [
 export default function MainPage() {
 return (
     <>
-        <div className='bg-gradient-to-tr from-red-50/10 to-red-200'><Navbar />
+        <div style={{ backgroundImage:`linear-gradient(to right, black, #000000e0, rgba(78, 84, 89, 0.3)), url(/src/assets/bg.png), url(${img})`,backgroundRepeat:"no-repeat",backgroundSize:"cover", width:"100%"
+    }} className='bg-gradient-to-tr from-black-50/10 to-red-200 '><Navbar />
         <section className="py-8 courier-prime-regular sm:mt-10 lg:mt-20 mb-28">
             <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row lg:items-stretch gap-x-6">
                 <div className="lg:w-[47%] py-4 lg:py-8 xl:py-12 space-y-7">
-                <h1 className="text-black text-3xl/snug sm:text-5xl/tight lg:text-4xl/tight xl:text-5xl/tight font-semibold text">
-            Build Resume with Ease in <span className="bg-rose-700/10  inline-block border border-dashed border-rose-600 px-3">Less Time</span>
+                <h1 className="text-white text-3xl/snug sm:text-5xl/tight lg:text-4xl/tight xl:text-5xl/tight font-semibold text">
+            Build Resume with Ease in <span className="bg-blue-500/10  inline-block border border-dashed border-blue-500 px-3">Less Time</span>
           </h1>
                     
                     
@@ -100,11 +102,11 @@ return (
   ))}
 </div>
 
-            <div className=" lg:max-w-sm p-4 rounded-lg  bg-gradient-to-r from-pink-500 to-rose-500  text-3xl font-bold flex items-center justify-center text-white transition duration-300 hover:bg-gradient-to-r hover:from-rose-400 hover:to-red-500">
+            <div className=" lg:max-w-sm p-4 rounded-lg  bg-gradient-to-r from-blue-500 to-blue-600  text-3xl font-bold flex items-center justify-center text-white transition duration-300 hover:bg-gradient-to-r hover:from-rose-400 hover:to-red-500">
   <a href="https://makemyresume.netlify.app/edit">Create Now</a>
 
 </div>
-<p className='border rounded p-1 text-sm flex border-blue-500/20 bg-blue-100/0'> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#4400ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Prefer Laptop and auto-saving is currently off</p>
+<p className=' p-1 text-sm flex text-white/50'> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#4400ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Prefer Laptop and auto-saving is unavailable</p>
                 </div>
                 
                 <div className="flex flex-1 relative lg:h-auto ">
@@ -117,6 +119,7 @@ return (
                
   
         </section></div>
+        
         <Services/>
        
         <FooterBlock/>

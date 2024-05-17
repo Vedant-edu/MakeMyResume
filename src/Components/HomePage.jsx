@@ -5,7 +5,7 @@ return (
   <Navbar />
   <main className="w-full courier-prime-regular">
     
-    <section className="relative pt-10 xl:pt-14">
+    <section  className="relative pt-10 xl:pt-14 main-section">
       
       <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-12">
         <div className="mx-auto text-center lg:text-left flex flex-col max-w-3xl justify-center lg:justify-start lg:py-8 flex-1 lg:w-1/2 lg:max-w-none">

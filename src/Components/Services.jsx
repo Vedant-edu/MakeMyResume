@@ -2,8 +2,8 @@
      
     const ServiceCard = ({ title, description, num }) => {
     return (
-        <div className="p-4 rounded-3xl border border-gray-200  relative overflow-hidden">
-            <div className="space-y-5 relative">
+        <div className="p-4  rounded-lg border border-gray-200  relative overflow-hidden shadow-lg ">
+            <div className="space-y-7 relative my-5">
                 <h2 className="text-lg md:text-xl font-semibold text-gray-900 ">
                     {title}
                 </h2>
@@ -40,7 +40,7 @@
     const Services = () => {
     return (
         <>
-        <section className="courier-prime-regular">
+        <section className="courier-prime-regular bg-[#F7F7F7]  py-16">
             <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col items-start gap-10 mb-10 xl:gap-14">
                 <div className=" max-w-3xl mx-auto space-y-4">
                     <h1 className="text-gray-900  font-semibold  text-4xl">
@@ -48,7 +48,7 @@
                     </h1>
                 
                 </div>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ">
                     {
                         services.map(service => (
                             <ServiceCard key={service.id} {...service} />
